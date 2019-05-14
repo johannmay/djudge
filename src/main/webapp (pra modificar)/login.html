@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang = "pt-br">
+    <head>
+        
+        <meta charset = "utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>Djudge - Corretor de Questões</title>
+        <!--Importações-->
+        <!-- <link rel="shortcut icon" href="img/djudge-favicon.ico" type="image/x-icon"/> -->
+        <link href="img/djudge_favicon.png" rel="icon" type="image/x-icon">
+        <script src="js/jquery/jquery-3.4.1.min.js"></script>
+        <link rel = "stylesheet" type="text/css" href=css/login.css>
+        <script src="js/index.js"></script>
+        
+    </head>
+
+    <body>
+        
+        <div id="header"></div>
+        
+        <form action="/djudge/LoginServlet" method="POST">
+
+            <div class="box">
+
+                <h2>Login</h2>
+				 <script>
+				
+		function typeWrite(el){
+
+			const textoArray = el.innerHTML.split('');
+			el.innerHTML='';
+			textoArray.forEach((letra, i) => {
+				setTimeout(function(){
+
+					el.innerHTML += letra;
+
+				}, 75*i)
+			});
+		}
+
+		const titulo = document.querySelector('h2')
+		typeWrite(titulo);	
+			</script>
+
+                <div class="inputBox">
+
+                    <br>
+
+                    <label>Email</label><br>
+                    <input type="email" name="email" placeholder="Digite seu email" required="">
+
+                    <br>
+
+                    <label>Senha</label><br>
+                    <input type ="password" name="senha" placeholder="Digite sua senha" required=""><br><br>
+                    <br>
+
+                    <input type="submit" name="login" value="Entrar">
+
+                </div>
+
+            </div>
+
+        </form>
+
+    </body>
+</html>
+

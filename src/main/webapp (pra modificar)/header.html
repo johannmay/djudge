@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+
+        <meta charset = "utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title></title>
+        <!--Importações-->
+        <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
+        <link rel="stylesheet" href="css/header.css">
+        <script src="js/bootstrap/bootstrap.min.js"></script>
+
+    </head>
+
+    <body data-spy= "scroll" data-target="#navbarResponsive">
+
+        <nav class="navbar navbar-expand-md navbar-light bg-dark fixed-top">
+            <div class="container">
+
+                <div class="logo">
+                <a class="navbar-brand" href="index.html"><img src="img/djudge_logo.png"></a>
+                </div>
+                
+                 
+                <button class="navbar-toggler first-button" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+					<div class="animated-icon1"><span></span><span></span><span></span><span></span></div>
+                </button>
+				
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link btn btn-login" href="login.html">Entrar<span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link btn btn-cadastro" href="cadastro.html">Cadastrar-se</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>  
+		
+		<script type="text/javascript">
+		$(document).ready(function(){
+			$('.first-button').on('click' , function(){
+				$('animated-icon1').toggleClass('open');
+			});
+		});		
+		</script>
+
+    </body>
+</html>
+
