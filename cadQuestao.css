@@ -33,10 +33,10 @@ body{
 	-moz-border-radius:5px;
 	-webkit-border-radius:5px;
 	box-shadow: 0 0 15px 1px rgba(0, 0 , 0 , 0.4);
-	padding: 20px 30px;
-	box-sizing: border-box;
+	padding: 60px 70px;
+	box-sizing: content-box;
 	width: 80%;
-	margin: 0 10%;
+	margin: 10% -20px;
 	position: absolute;
 }
 
