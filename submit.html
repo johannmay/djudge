@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang = "pt-br">
+    <head>
+
+        <meta charset = "utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>Djudge - Corretor de Questões</title>
+        <!--Importações-->
+        <script src="js/jquery/jquery-3.4.1.min.js"></script>
+        <script src="js/Subheader.js"></script>
+        <link href="img/djudge_favicon.png" rel="icon" type="image/x-icon">
+        <link href="css/submit.css"> 
+        <link href="css/bootstrap/bootstrap.min.css">
+        <script src="js/bootstrap/bootstrap.min.js"></script>
+
+    </head>
+    <body>
+
+        <div id="header"></div>
+        
+       
+        <div class="container d-flex align-items-center justify-content-center">
+          <h1 class= "row-auto">Submeta sua questão!</h1>
+		</div>
+		
+			<div class="container d-flex align-items-center justify-content-center">
+         <h1 class="row-auto">Exemplos de entrada:</h1>
+		</div>
+            
+		<form>
+			<div class="container d-flex align-items-center justify-content-center">
+			  <div class="custom-file">
+				<input type="file" class="custom-file-input" id="customFile">
+				<label class="custom-file-label" for="customFile">Escolha o Arquivo</label>
+			  </div>
+			</div>
+			<div class="container d-flex align-items-center justify-content-center">
+				<input type="submit" value="Submeter Questão" class="bt btn btn-secondary btn-lg">
+			</div>
+		</form>
+
+        
+
+        <script>
+
+            function typeWrite(el) {
+
+                const textoArray = el.innerHTML.split('');
+                el.innerHTML = '';
+                textoArray.forEach((letra, i) => {
+                    setTimeout(function () {
+
+                        el.innerHTML += letra;
+
+                    }, 75 * i);
+                });
+            }
+
+            const titulo = document.querySelector('h1');
+            typeWrite(titulo);
+
+        </script>
+			<script>
+				$(".custom-file-input").on("change", function() {
+				  var fileName = $(this).val().split("\\").pop();
+				  $(this).siblings(".custom-file-label").addClass("selected").html(fileName);
+				});
+			</script>
+    </body>
+</html>

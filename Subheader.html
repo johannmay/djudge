@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+
+        <meta charset = "utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>Djudge - Corretor de Questões</title>
+        <!--Importações-->
+        <script src="js/jquery/jquery-3.4.1.min.js"></script>
+        <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
+        <script src="js/bootstrap/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="css/submit.css">
+
+    </head>
+
+    <body data-spy= "scroll" data-target="#navbarResponsive">
+
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top">
+            <div class="container">
+
+                <div class="logo">
+                    <a class="navbar-brand" href="index.html"><img alt="logo Djudge" src="img/djudge_logo.png"></a>
+                </div>
+
+
+                <a class="navbar-toggler btn-dark" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    <div class="animated-icon1"><span></span><span></span><span></span><span></span></div>
+                </a>
+
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item dropdown">
+                          <a class="nav-link dropdown-toggle" data-toggle="dropdown">Opções</a>
+							<div class="dropdown-menu dropdown-menu-right">
+								<a href="#" class="dropdown-item">Histórico</a>
+								<a href="#" class="dropdown-item">Questões</a>
+								<a href="#" class="dropdown-item">Maratona</a>	
+								<div class="dropdown-divider"></div>
+								<a href="#" class="dropdown-item">Perfil de Usuário</a>
+							</div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>  
+
+        <script type="text/javascript">
+            $(document).ready(function () {
+                $('.first-button').on('click', function () {
+                    $('animated-icon1').toggleClass('open');
+                });
+            });
+        </script>
+    </body>
+</html>
+
